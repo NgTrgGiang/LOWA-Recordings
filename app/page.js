@@ -7,7 +7,7 @@ export default function Home() {
       <nav className="navbar">
         <div className="nav-container">
           <a href="#home" className="nav-logo">
-            <img src="/assets/logo.jpg" alt="LOWA Recordings Logo" />
+            <img src="/assets/LOGO-03.png" alt="LOWA Recordings Logo" />
           </a>
 
           <ul className="nav-menu">
