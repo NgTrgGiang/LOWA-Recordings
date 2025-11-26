@@ -156,26 +156,188 @@ export default function Home() {
           </div>
 
           <div className="grid grid-3 portfolio-grid">
-            {[1, 2, 3, 4, 5].map((item) => (
-              <div key={item} className="card portfolio-item" data-category="pop">
-                <div className="portfolio-video">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/86752vuHH6k?si=Zn4_0Rzac026Rv58"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                  />
-                </div>
-                <div className="portfolio-info">
-                  <h4>Chẳng biết do ai</h4>
-                  <p>Halee, SuperC & datfitzx</p>
-                </div>
+            {/* Video 1 */}
+            <div className="card portfolio-item" data-category="pop">
+              <div className="portfolio-video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/86752vuHH6k?si=Zn4_0Rzac026Rv58"
+                  title="Chẳng biết do ai"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
               </div>
-            ))}
+              <div className="portfolio-info">
+                <h4>Chẳng biết do ai</h4>
+                <p>Halee, SuperC & datfitzx</p>
+              </div>
+            </div>
+
+            {/* Video 2 */}
+            <div className="card portfolio-item" data-category="pop">
+              <div className="portfolio-video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/edM8W8WwfsQ?si=rqwFUWk3FDm5V4Kg"
+                  title="Video 2"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+              <div className="portfolio-info">
+                <h4>Chưa bao giờ mẹ kể</h4>
+                <p>Quân A.P & Cara</p>
+              </div>
+            </div>
+            {/* Video 3 */}
+            <div className="card portfolio-item" data-category="pop">
+              <div className="portfolio-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ABuY4KUUVcI?si=NaLY09vwZOlVWDRn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div className="portfolio-info">
+                <h4>Một Ngày Chẳng Nắng</h4>
+                <p>Pháo </p>
+              </div>
+            </div>
+            {/* Video 4 */}
+            <div className="card portfolio-item" data-category="pop">
+              <div className="portfolio-video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/VIDEO_ID_2"
+                  title="Video 2"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+              <div className="portfolio-info">
+                <h4>Tên bài hát 2</h4>
+                <p>Nghệ sĩ 2</p>
+              </div>
+            </div>
+            {/* Video 5 */}
+            <div className="card portfolio-item" data-category="pop">
+              <div className="portfolio-video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/VIDEO_ID_2"
+                  title="Video 2"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+              <div className="portfolio-info">
+                <h4>Tên bài hát 2</h4>
+                <p>Nghệ sĩ 2</p>
+              </div>
+            </div>
+            {/* Video 6 */}
+            <div className="card portfolio-item" data-category="pop">
+              <div className="portfolio-video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/VIDEO_ID_2"
+                  title="Video 2"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+              <div className="portfolio-info">
+                <h4>Tên bài hát 2</h4>
+                <p>Nghệ sĩ 2</p>
+              </div>
+            </div>
+            {/* Video 7 */}
+            <div className="card portfolio-item" data-category="pop">
+              <div className="portfolio-video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/VIDEO_ID_2"
+                  title="Video 2"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+              <div className="portfolio-info">
+                <h4>Tên bài hát 2</h4>
+                <p>Nghệ sĩ 2</p>
+              </div>
+            </div>
+            {/* Video 8 */}
+            <div className="card portfolio-item" data-category="pop">
+              <div className="portfolio-video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/VIDEO_ID_2"
+                  title="Video 2"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+              <div className="portfolio-info">
+                <h4>Tên bài hát 2</h4>
+                <p>Nghệ sĩ 2</p>
+              </div>
+            </div>
+            {/* Video 9 */}
+            <div className="card portfolio-item" data-category="pop">
+              <div className="portfolio-video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/VIDEO_ID_2"
+                  title="Video 2"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+              <div className="portfolio-info">
+                <h4>Tên bài hát 2</h4>
+                <p>Nghệ sĩ 2</p>
+              </div>
+            </div>
+            {/* Video 10 */}
+            <div className="card portfolio-item" data-category="pop">
+              <div className="portfolio-video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/VIDEO_ID_2"
+                  title="Video 2"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+              <div className="portfolio-info">
+                <h4>Tên bài hát 2</h4>
+                <p>Nghệ sĩ 2</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
