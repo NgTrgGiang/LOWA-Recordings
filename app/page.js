@@ -236,18 +236,22 @@ export default function Home() {
                   <h4>Píc Cờ Bô , Píc Cơ Bồ</h4>
                   <p>Cường Seven ft VNA</p>
                 </div>
-              </div>
-              {/* Phần 2: Sản Phẩm TVC */}
-              <div>
-                <h3 style={{
-                  textAlign: 'center',
-                  fontSize: '2rem',
-                  marginBottom: 'var(--spacing-xl)',
-                  color: 'var(--primary-purple)'
-                }}>
-                  Sản Phẩm TVC
-                </h3>
-              </div>
+              </div>  {/* Video 6 */}
+            </div>  {/* ĐÓNG grid Nghệ Sĩ */}
+          </div>  {/* ĐÓNG phần Nghệ Sĩ */}
+
+          {/* Phần 2: Sản Phẩm TVC */}
+          <div>
+            <h3 style={{
+              textAlign: 'center',
+              fontSize: '2rem',
+              marginBottom: 'var(--spacing-xl)',
+              color: 'var(--primary-purple)'
+            }}>
+              Sản Phẩm TVC
+            </h3>
+
+            <div className="grid grid-3 portfolio-grid">  {/* ← THÊM grid container */}
               {/* Video 7 */}
               <div className="card portfolio-item" data-category="pop">
                 <div className="portfolio-video">
