@@ -113,22 +113,25 @@ export default function Home() {
           <div className="partners-container">
             <div className="partners-logos">
               <div className="partner-logo">
-                <img src="/assets/tải xuống (2).png" alt="Partner 1" />
+                <img src="/assets/mixigaming.png" alt="Partner 1" />
               </div>
               <div className="partner-logo">
-                <img src="/assets/tải xuống (3).png" alt="Partner 2" />
+                <img src="/assets/samsung.png" alt="Partner 2" />
               </div>
               <div className="partner-logo">
-                <img src="/assets/tải xuống (4).png" alt="Partner 3" />
+                <img src="/assets/lienquanmobile.png" alt="Partner 3" />
               </div>
               <div className="partner-logo">
-                <img src="/assets/tải xuống (5).png" alt="Partner 4" />
+                <img src="/assets/msb.jpg" alt="Partner 4" />
               </div>
               <div className="partner-logo">
-                <img src="/assets/tải xuống (6).png" alt="Partner 5" />
+                <img src="/assets/rapviet.jpg" alt="Partner 5" />
               </div>
               <div className="partner-logo">
-                <img src="/assets/tải xuống.png" alt="Partner 6" />
+                <img src="/assets/vietcombank.jpg" alt="Partner 6" />
+              </div>
+              <div className="partner-logo">
+                <img src="/assets/domino.png" alt="Partner 7" />
               </div>
             </div>
 
