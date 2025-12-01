@@ -1367,3 +1367,35 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
+/* Contact Image Section */
+.contact-image-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.contact-image-wrapper {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.messenger-btn {
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .contact-image-section {
+    margin-top: var(--spacing-xl);
+  }
+}

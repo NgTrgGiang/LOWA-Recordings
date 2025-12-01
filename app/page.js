@@ -295,28 +295,184 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Equipment Section */}
-      <section id="equipment" className="section">
+      {/* Pricing Section */}
+      <section id="pricing" className="section">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Thiết Bị Âm Thanh</h2>
+            <h2 className="section-title">Bảng Giá</h2>
             <p className="section-subtitle">
-              Những sản phẩm chúng mình tin tưởng dùng
+              Các gói dịch vụ linh hoạt phù hợp với mọi nhu cầu
             </p>
           </div>
 
-          <div className="grid grid-4">
-            {[1, 2, 3, 4].map((item) => (
-              <a key={item} href="https://shopee.vn/" target="_blank" rel="noopener noreferrer" className="equipment-link">
-                <div className="card equipment-card">
-                  <div className="equipment-image">
-                    <img src="/assets/equipment-1.jpg" alt="Loại sản phẩm" />
-                  </div>
-                  <h4>Tên sản phẩm</h4>
-                  <p className="equipment-category">Loại sản phẩm</p>
+          {/* Thu Âm Nhạc Cụ */}
+          <div style={{ marginBottom: 'var(--spacing-3xl)' }}>
+            <h3 style={{
+              textAlign: 'center',
+              fontSize: '2rem',
+              marginBottom: 'var(--spacing-xl)',
+              color: 'var(--primary-purple)'
+            }}>
+              Thu Âm Nhạc Cụ
+            </h3>
+
+            <div className="grid grid-3">
+              <div className="card pricing-card">
+                <h3>Thu Guitar</h3>
+                <div className="pricing-price">
+                  <span className="price-amount">350.000đ</span>
+                  <span className="price-period">/ buổi</span>
                 </div>
-              </a>
-            ))}
+              </div>
+
+              <div className="card pricing-card">
+                <h3>Thu Keyboard</h3>
+                <div className="pricing-price">
+                  <span className="price-amount">350.000đ</span>
+                  <span className="price-period">/ buổi</span>
+                </div>
+              </div>
+
+              <div className="card pricing-card">
+                <h3>Thu Bass</h3>
+                <div className="pricing-price">
+                  <span className="price-amount">350.000đ</span>
+                  <span className="price-period">/ buổi</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="pricing-note">
+              <p>Thu Trống Nhạc Cụ Khác: <strong>Liên Hệ</strong></p>
+              <p style={{ fontSize: '0.9rem', marginTop: 'var(--spacing-sm)' }}>
+                Một buổi thu kéo dài 1 tiếng 30 phút<br />
+                Phụ phí thêm giờ: 100.000 VNĐ/30 phút
+              </p>
+            </div>
+          </div>
+
+          {/* Phối Beat */}
+          <div style={{ marginBottom: 'var(--spacing-3xl)' }}>
+            <h3 style={{
+              textAlign: 'center',
+              fontSize: '2rem',
+              marginBottom: 'var(--spacing-xl)',
+              color: 'var(--primary-purple)'
+            }}>
+              Phối Beat
+            </h3>
+
+            <div className="grid grid-2">
+              <div className="card pricing-card">
+                <h3>Beat Cover</h3>
+                <div className="pricing-price">
+                  <span className="price-amount">3tr - 5tr</span>
+                  <span className="price-period">/ beat</span>
+                </div>
+                <p style={{ textAlign: 'center', marginTop: 'var(--spacing-md)' }}>
+                  Dựa trên tính chất của beat
+                </p>
+              </div>
+
+              <div className="card pricing-card">
+                <h3>Beat Phối Mới</h3>
+                <div className="pricing-price">
+                  <span className="price-amount">Liên Hệ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Gói Studio */}
+          <div>
+            <h3 style={{
+              textAlign: 'center',
+              fontSize: '2rem',
+              marginBottom: 'var(--spacing-xl)',
+              color: 'var(--primary-purple)'
+            }}>
+              Gói Studio
+            </h3>
+
+            <div className="grid grid-4">
+              {/* Gói Cơ Bản */}
+              <div className="card pricing-card">
+                <h3>Gói Cơ Bản</h3>
+                <div className="pricing-price">
+                  <span className="price-amount">400K</span>
+                </div>
+                <ul className="pricing-features">
+                  <li><strong>90 phút</strong></li>
+                  <li>100.000 VNĐ/người</li>
+                  <li>100.000 VNĐ/30 phút</li>
+                  <li>Chỉnh chènh, phơ</li>
+                  <li>Mix&Master cơ bản</li>
+                </ul>
+                <p style={{ fontSize: '0.85rem', marginTop: 'var(--spacing-md)' }}>
+                  <strong>Microphone:</strong> AT 2020 Japan
+                </p>
+              </div>
+
+              {/* Gói Nâng Cao */}
+              <div className="card pricing-card">
+                <h3>Gói Nâng Cao</h3>
+                <div className="pricing-price">
+                  <span className="price-amount">600K</span>
+                </div>
+                <ul className="pricing-features">
+                  <li><strong>120 phút</strong></li>
+                  <li>150.000 VNĐ/người</li>
+                  <li>100.000 VNĐ/30 phút</li>
+                  <li>Chỉnh chènh, phơ</li>
+                  <li>Edit nhịp phách</li>
+                  <li>Mix&Master tiêu chuẩn</li>
+                </ul>
+                <p style={{ fontSize: '0.85rem', marginTop: 'var(--spacing-md)' }}>
+                  <strong>Microphone:</strong> Rhode NT-2A
+                </p>
+              </div>
+
+              {/* Gói Pro */}
+              <div className="card pricing-card featured">
+                <div className="pricing-badge">Phổ biến</div>
+                <h3>Gói Pro</h3>
+                <div className="pricing-price">
+                  <span className="price-amount">800K</span>
+                </div>
+                <ul className="pricing-features">
+                  <li><strong>150 phút</strong></li>
+                  <li>200.000 VNĐ/người</li>
+                  <li>150.000 VNĐ/30 phút</li>
+                  <li>Tư vấn, dựng beat</li>
+                  <li>Chỉnh chènh, phơ</li>
+                  <li>Edit nhịp phách</li>
+                  <li>Mix&Master nâng cao</li>
+                </ul>
+                <p style={{ fontSize: '0.85rem', marginTop: 'var(--spacing-md)' }}>
+                  <strong>Microphone:</strong> Rhode NT-2A
+                </p>
+              </div>
+
+              {/* Gói Session */}
+              <div className="card pricing-card">
+                <h3>Gói Session</h3>
+                <div className="pricing-price">
+                  <span className="price-amount">1.5tr</span>
+                </div>
+                <ul className="pricing-features">
+                  <li><strong>240 phút</strong></li>
+                  <li>250.000 VNĐ/người</li>
+                  <li>150.000 VNĐ/30 phút</li>
+                  <li>Tư vấn dựng beat, Adlib</li>
+                  <li>Chỉnh chènh, phơ</li>
+                  <li>Edit nhịp phách</li>
+                  <li>Mix&Master chuyên nghiệp</li>
+                </ul>
+                <p style={{ fontSize: '0.85rem', marginTop: 'var(--spacing-md)' }}>
+                  <strong>Microphone:</strong> Rhode NT-2A
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -332,6 +488,7 @@ export default function Home() {
           </div>
 
           <div className="contact-container">
+            {/* Left: Contact Info */}
             <div className="contact-info">
               <div className="contact-item">
                 <div className="contact-icon">📍</div>
@@ -365,86 +522,21 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
 
-            <form id="booking-form" className="contact-form">
-              <div className="form-row">
-                <div className="form-group">
-                  <label htmlFor="booking-name" className="form-label">Họ và Tên *</label>
-                  <input type="text" id="booking-name" className="form-input" placeholder="Nguyễn Văn A" required />
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="booking-email" className="form-label">Email *</label>
-                  <input type="email" id="booking-email" className="form-input" placeholder="example@email.com" required />
-                </div>
-              </div>
-
-              <div className="form-row">
-                <div className="form-group">
-                  <label htmlFor="booking-phone" className="form-label">Số Điện Thoại *</label>
-                  <input type="tel" id="booking-phone" className="form-input" placeholder="0987654321" required />
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="booking-service" className="form-label">Dịch Vụ *</label>
-                  <select id="booking-service" className="form-select" required>
-                    <option value="">Chọn dịch vụ</option>
-                    <option value="recording">Recording</option>
-                    <option value="mixing">Mixing & Mastering</option>
-                    <option value="production">Music Production</option>
-                    <option value="podcast">Podcast Recording</option>
-                    <option value="beat">Beat Making</option>
-                    <option value="post">Audio Post-Production</option>
-                  </select>
-                </div>
-              </div>
-
-              <div className="form-row">
-                <div className="form-group">
-                  <label htmlFor="booking-date" className="form-label">Ngày *</label>
-                  <input type="date" id="booking-date" className="form-input" required />
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="booking-time" className="form-label">Giờ *</label>
-                  <select id="booking-time" className="form-select" required>
-                    <option value="">Chọn giờ</option>
-                    <option value="09:00">09:00</option>
-                    <option value="10:00">10:00</option>
-                    <option value="11:00">11:00</option>
-                    <option value="13:00">13:00</option>
-                    <option value="14:00">14:00</option>
-                    <option value="15:00">15:00</option>
-                    <option value="16:00">16:00</option>
-                    <option value="17:00">17:00</option>
-                    <option value="18:00">18:00</option>
-                    <option value="19:00">19:00</option>
-                    <option value="20:00">20:00</option>
-                  </select>
-                </div>
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="booking-notes" className="form-label">Ghi Chú</label>
-                <textarea
-                  id="booking-notes"
-                  className="form-textarea"
-                  placeholder="Thông tin thêm về dự án của bạn..."
-                />
-              </div>
-
-              <div className="form-buttons">
-                <button type="submit" className="btn btn-primary btn-large">Đặt Lịch Ngay</button>
-                <a
-                  href="https://www.facebook.com/messages/t/624755474835140"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline btn-large"
-                >
-                  <i className="fab fa-facebook-messenger"></i> Chat Messenger
-                </a>
-              </div>
-            </form>
+          {/* Right: Image + Messenger Button */}
+          <div className="contact-image-section">
+            <div className="contact-image-wrapper">
+              <img src="/assets/contact-image.jpg" alt="LOWA Recordings Studio" />
+            </div>
+            <a
+              href="https://www.facebook.com/messages/t/624755474835140"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary btn-large messenger-btn"
+            >
+              <i className="fab fa-facebook-messenger"></i> Chat Messenger
+            </a>
           </div>
         </div>
       </section>
