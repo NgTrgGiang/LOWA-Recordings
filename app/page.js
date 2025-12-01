@@ -325,13 +325,13 @@ export default function Home() {
             {/* Tab Content - Images */}
             <div className="pricing-tab-content">
               <div className="pricing-image active" data-content="tab1">
-                <img src="/assets/pricing-nhaccuc.jpg" alt="Thu Âm Nhạc Cụ" />
+                <img src="/assets/pricing-nhaccuc.png" alt="Thu Âm Nhạc Cụ" />
               </div>
               <div className="pricing-image" data-content="tab2">
-                <img src="/assets/pricing-beat.jpg" alt="Phối Beat" />
+                <img src="/assets/pricing-beat.png" alt="Phối Beat" />
               </div>
               <div className="pricing-image" data-content="tab3">
-                <img src="/assets/pricing-vocal.jpg" alt="Thu Âm Vocal" />
+                <img src="/assets/pricing-vocal.png" alt="Thu Âm Vocal" />
               </div>
             </div>
           </div>

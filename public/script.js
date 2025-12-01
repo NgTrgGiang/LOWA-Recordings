@@ -342,22 +342,60 @@ counters.forEach(counter => counterObserver.observe(counter));
 
 console.log('🎵 LOWA Recordings - Website loaded successfully!');
 
-// Pricing Tabs
+// Pricing Tabs with Auto-Rotation
 document.addEventListener('DOMContentLoaded', function () {
   const tabs = document.querySelectorAll('.pricing-tab');
   const images = document.querySelectorAll('.pricing-image');
 
-  tabs.forEach(tab => {
+  let currentIndex = 0;
+  let autoRotateInterval;
+  let isHovering = false;
+
+  // Function to switch to a specific tab
+  function switchTab(index) {
+    // Remove active class from all
+    tabs.forEach(t => t.classList.remove('active'));
+    images.forEach(img => img.classList.remove('active'));
+
+    // Add active class to current
+    tabs[index].classList.add('active');
+    const tabId = tabs[index].getAttribute('data-tab');
+    document.querySelector(`[data-content="${tabId}"]`).classList.add('active');
+  }
+
+  // Auto-rotate function
+  function autoRotate() {
+    if (!isHovering) {
+      currentIndex = (currentIndex + 1) % tabs.length; // Loop: 0 -> 1 -> 2 -> 0
+      switchTab(currentIndex);
+    }
+  }
+
+  // Start auto-rotation (every 3 seconds)
+  function startAutoRotate() {
+    autoRotateInterval = setInterval(autoRotate, 3000);
+  }
+
+  // Stop auto-rotation
+  function stopAutoRotate() {
+    clearInterval(autoRotateInterval);
+  }
+
+  // Handle hover events
+  tabs.forEach((tab, index) => {
     tab.addEventListener('mouseenter', function () {
-      const tabId = this.getAttribute('data-tab');
+      isHovering = true;
+      stopAutoRotate();
+      currentIndex = index;
+      switchTab(index);
+    });
 
-      // Remove active class from all
-      tabs.forEach(t => t.classList.remove('active'));
-      images.forEach(img => img.classList.remove('active'));
-
-      // Add active class to current
-      this.classList.add('active');
-      document.querySelector(`[data-content="${tabId}"]`).classList.add('active');
+    tab.addEventListener('mouseleave', function () {
+      isHovering = false;
+      startAutoRotate();
     });
   });
+
+  // Start auto-rotation on page load
+  startAutoRotate();
 });
