@@ -341,3 +341,23 @@ const counterObserver = new IntersectionObserver((entries) => {
 counters.forEach(counter => counterObserver.observe(counter));
 
 console.log('🎵 LOWA Recordings - Website loaded successfully!');
+
+// Pricing Tabs
+document.addEventListener('DOMContentLoaded', function () {
+  const tabs = document.querySelectorAll('.pricing-tab');
+  const images = document.querySelectorAll('.pricing-image');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('mouseenter', function () {
+      const tabId = this.getAttribute('data-tab');
+
+      // Remove active class from all
+      tabs.forEach(t => t.classList.remove('active'));
+      images.forEach(img => img.classList.remove('active'));
+
+      // Add active class to current
+      this.classList.add('active');
+      document.querySelector(`[data-content="${tabId}"]`).classList.add('active');
+    });
+  });
+});

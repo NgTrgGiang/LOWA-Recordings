@@ -308,172 +308,30 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Thu Âm Nhạc Cụ */}
-          <div style={{ marginBottom: 'var(--spacing-3xl)' }}>
-            <h3 style={{
-              textAlign: 'center',
-              fontSize: '2rem',
-              marginBottom: 'var(--spacing-xl)',
-              color: 'var(--primary-purple)'
-            }}>
-              Thu Âm Nhạc Cụ
-            </h3>
-
-            <div className="grid grid-3">
-              <div className="card pricing-card">
-                <h3>Thu Guitar</h3>
-                <div className="pricing-price">
-                  <span className="price-amount">350.000đ</span>
-                  <span className="price-period">/ buổi</span>
-                </div>
+          <div className="pricing-tabs-container">
+            {/* Tabs */}
+            <div className="pricing-tabs">
+              <div className="pricing-tab active" data-tab="tab1">
+                <h3>Thu Âm Nhạc Cụ</h3>
               </div>
-
-              <div className="card pricing-card">
-                <h3>Thu Keyboard</h3>
-                <div className="pricing-price">
-                  <span className="price-amount">350.000đ</span>
-                  <span className="price-period">/ buổi</span>
-                </div>
+              <div className="pricing-tab" data-tab="tab2">
+                <h3>Phối Beat</h3>
               </div>
-
-              <div className="card pricing-card">
-                <h3>Thu Bass</h3>
-                <div className="pricing-price">
-                  <span className="price-amount">350.000đ</span>
-                  <span className="price-period">/ buổi</span>
-                </div>
+              <div className="pricing-tab" data-tab="tab3">
+                <h3>Gói Studio</h3>
               </div>
             </div>
 
-            <div className="pricing-note">
-              <p>Thu Trống Nhạc Cụ Khác: <strong>Liên Hệ</strong></p>
-              <p style={{ fontSize: '0.9rem', marginTop: 'var(--spacing-sm)' }}>
-                Một buổi thu kéo dài 1 tiếng 30 phút<br />
-                Phụ phí thêm giờ: 100.000 VNĐ/30 phút
-              </p>
-            </div>
-          </div>
-
-          {/* Phối Beat */}
-          <div style={{ marginBottom: 'var(--spacing-3xl)' }}>
-            <h3 style={{
-              textAlign: 'center',
-              fontSize: '2rem',
-              marginBottom: 'var(--spacing-xl)',
-              color: 'var(--primary-purple)'
-            }}>
-              Phối Beat
-            </h3>
-
-            <div className="grid grid-2">
-              <div className="card pricing-card">
-                <h3>Beat Cover</h3>
-                <div className="pricing-price">
-                  <span className="price-amount">3tr - 5tr</span>
-                  <span className="price-period">/ beat</span>
-                </div>
-                <p style={{ textAlign: 'center', marginTop: 'var(--spacing-md)' }}>
-                  Dựa trên tính chất của beat
-                </p>
+            {/* Tab Content - Images */}
+            <div className="pricing-tab-content">
+              <div className="pricing-image active" data-content="tab1">
+                <img src="/assets/pricing-nhaccuc.jpg" alt="Thu Âm Nhạc Cụ" />
               </div>
-
-              <div className="card pricing-card">
-                <h3>Beat Phối Mới</h3>
-                <div className="pricing-price">
-                  <span className="price-amount">Liên Hệ</span>
-                </div>
+              <div className="pricing-image" data-content="tab2">
+                <img src="/assets/pricing-beat.jpg" alt="Phối Beat" />
               </div>
-            </div>
-          </div>
-
-          {/* Gói Studio */}
-          <div>
-            <h3 style={{
-              textAlign: 'center',
-              fontSize: '2rem',
-              marginBottom: 'var(--spacing-xl)',
-              color: 'var(--primary-purple)'
-            }}>
-              Gói Studio
-            </h3>
-
-            <div className="grid grid-4">
-              {/* Gói Cơ Bản */}
-              <div className="card pricing-card">
-                <h3>Gói Cơ Bản</h3>
-                <div className="pricing-price">
-                  <span className="price-amount">400.000 VNĐ</span>
-                </div>
-                <ul className="pricing-features">
-                  <li><strong>90 phút</strong></li>
-                  <li>100.000 VNĐ/người</li>
-                  <li>100.000 VNĐ/30 phút</li>
-                  <li>Chỉnh chênh, phô</li>
-                  <li>Mix&Master cơ bản</li>
-                </ul>
-                <p style={{ fontSize: '0.85rem', marginTop: 'var(--spacing-md)' }}>
-                  <strong>Microphone:</strong> AT 2020 Japan
-                </p>
-              </div>
-
-              {/* Gói Nâng Cao */}
-              <div className="card pricing-card">
-                <h3>Gói Nâng Cao</h3>
-                <div className="pricing-price">
-                  <span className="price-amount">600.000 VNĐ</span>
-                </div>
-                <ul className="pricing-features">
-                  <li><strong>120 phút</strong></li>
-                  <li>150.000 VNĐ/người</li>
-                  <li>100.000 VNĐ/30 phút</li>
-                  <li>Chỉnh chênh, phô</li>
-                  <li>Edit nhịp phách</li>
-                  <li>Mix&Master tiêu chuẩn</li>
-                </ul>
-                <p style={{ fontSize: '0.85rem', marginTop: 'var(--spacing-md)' }}>
-                  <strong>Microphone:</strong> Rhode NT-2A
-                </p>
-              </div>
-
-              {/* Gói Pro */}
-              <div className="card pricing-card featured">
-                <div className="pricing-badge">Phổ biến</div>
-                <h3>Gói Pro</h3>
-                <div className="pricing-price">
-                  <span className="price-amount">800.000 VNĐ</span>
-                </div>
-                <ul className="pricing-features">
-                  <li><strong>150 phút</strong></li>
-                  <li>200.000 VNĐ/người</li>
-                  <li>150.000 VNĐ/30 phút</li>
-                  <li>Tư vấn, dựng bè</li>
-                  <li>Chỉnh chênh, phô</li>
-                  <li>Edit nhịp phách</li>
-                  <li>Mix&Master nâng cao</li>
-                </ul>
-                <p style={{ fontSize: '0.85rem', marginTop: 'var(--spacing-md)' }}>
-                  <strong>Microphone:</strong> Rhode NT-2A
-                </p>
-              </div>
-
-              {/* Gói Session */}
-              <div className="card pricing-card">
-                <h3>Gói Session</h3>
-                <div className="pricing-price">
-                  <span className="price-amount">1.500.000 VNĐ</span>
-                </div>
-                <ul className="pricing-features">
-                  <li><strong>240 phút</strong></li>
-                  <li>250.000 VNĐ/người</li>
-                  <li>150.000 VNĐ/30 phút</li>
-                  <li>Tư vấn dựng beat, ADLIB</li>
-                  <li>Chỉnh chênh, phô</li>
-                  <li>Edit nhịp phách</li>
-                  <li>Mix&Master chuyên nghiệp</li>
-                </ul>
-                <p style={{ fontSize: '0.85rem', marginTop: 'var(--spacing-md)' }}>
-                  <strong>Microphone:</strong> Rhode NT-2A
-                </p>
+              <div className="pricing-image" data-content="tab3">
+                <img src="/assets/pricing-vocal.jpg" alt="Thu Âm Vocal" />
               </div>
             </div>
           </div>
