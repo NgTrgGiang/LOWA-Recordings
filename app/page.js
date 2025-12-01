@@ -522,21 +522,21 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Right: Image + Messenger Button */}
-          <div className="contact-image-section">
-            <div className="contact-image-wrapper">
-              <img src="/assets/contact-image.jpg" alt="LOWA Recordings Studio" />
+            {/* Right: Image + Messenger Button */}
+            <div className="contact-image-section">
+              <div className="contact-image-wrapper">
+                <img src="/assets/contact-image.jpg" alt="LOWA Recordings Studio" />
+              </div>
+              <a
+                href="https://www.facebook.com/messages/t/624755474835140"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-large messenger-btn"
+              >
+                <i className="fab fa-facebook-messenger"></i> Chat Messenger
+              </a>
             </div>
-            <a
-              href="https://www.facebook.com/messages/t/624755474835140"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary btn-large messenger-btn"
-            >
-              <i className="fab fa-facebook-messenger"></i> Chat Messenger
-            </a>
           </div>
         </div>
       </section>
