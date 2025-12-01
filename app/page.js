@@ -54,47 +54,47 @@ export default function Home() {
       <section id="services" className="section">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Dịch Vụ Của Chúng Tôi</h2>
+            <h2 className="section-title">Dịch Vụ LOWA</h2>
             <p className="section-subtitle">
-              Cung cấp đầy đủ các dịch vụ sản xuất âm nhạc chuyên nghiệp
+              Giải pháp âm thanh toàn diện cho mọi nhu cầu sản xuất của bạn
             </p>
           </div>
 
-          <div className="grid grid-3">
+          <div className="services-grid">
             <div className="card service-card">
               <div className="service-icon">🎙️</div>
-              <h3>Recording</h3>
-              <p>Thu âm chất lượng cao với thiết bị chuyên nghiệp và kỹ thuật viên giàu kinh nghiệm</p>
+              <h3>Thu Âm</h3>
+              <p>Phòng thu cách âm chuyên nghiệp với thiết bị cao cấp, mang đến chất lượng âm thanh tinh khiết và chân thực nhất cho giọng hát và nhạc cụ</p>
             </div>
 
             <div className="card service-card">
               <div className="service-icon">🎚️</div>
               <h3>Mixing & Mastering</h3>
-              <p>Trộn và làm chủ âm thanh để tạo ra sản phẩm hoàn hảo, sẵn sàng phát hành</p>
+              <p>Trộn và làm chủ âm thanh với kỹ thuật hiện đại, tối ưu hóa từng chi tiết để tạo ra sản phẩm hoàn hảo, sẵn sàng phát hành trên mọi nền tảng</p>
+            </div>
+
+            <div className="card service-card">
+              <div className="service-icon">🎼</div>
+              <h3>Hòa Âm Phối Khí</h3>
+              <p>Sáng tạo và phối khí chuyên nghiệp, biến ý tưởng âm nhạc của bạn thành tác phẩm hoàn chỉnh với âm sắc phong phú và độc đáo</p>
             </div>
 
             <div className="card service-card">
               <div className="service-icon">🎵</div>
               <h3>Music Production</h3>
-              <p>Sản xuất âm nhạc từ ý tưởng đến sản phẩm hoàn chỉnh với đội ngũ producer chuyên nghiệp</p>
+              <p>Sản xuất âm nhạc từ A-Z, từ sáng tác, thu âm, phối khí đến hoàn thiện, đồng hành cùng bạn trong mọi giai đoạn sáng tạo</p>
             </div>
 
             <div className="card service-card">
               <div className="service-icon">🎧</div>
-              <h3>Podcast Recording</h3>
-              <p>Ghi âm podcast chất lượng cao với không gian cách âm tối ưu</p>
-            </div>
-
-            <div className="card service-card">
-              <div className="service-icon">🎹</div>
-              <h3>Beat Making</h3>
-              <p>Sáng tác và sản xuất beat theo yêu cầu với nhiều thể loại khác nhau</p>
+              <h3>Voice Off/ Voice Over/ Podcast</h3>
+              <p>Ghi âm lồng tiếng, thuyết minh và podcast chất lượng cao với không gian cách âm tối ưu, phù hợp cho mọi dự án truyền thông</p>
             </div>
 
             <div className="card service-card">
               <div className="service-icon">🎬</div>
-              <h3>Audio Post-Production</h3>
-              <p>Hậu kỳ âm thanh cho phim, quảng cáo và các dự án media</p>
+              <h3>Sản Xuất TVC</h3>
+              <p>Sản xuất âm thanh cho quảng cáo TVC chuyên nghiệp, từ thu âm voice over, sound design đến hậu kỳ âm thanh hoàn chỉnh</p>
             </div>
           </div>
         </div>
@@ -255,77 +255,39 @@ export default function Home() {
               {/* Video 7 */}
               <div className="card portfolio-item" data-category="pop">
                 <div className="portfolio-video">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/VIDEO_ID_2"
-                    title="Video 2"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                  />
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/SJO_5Xr8Rfc?si=VPKOBFLExqFIDBlq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div className="portfolio-info">
-                  <h4>Tên bài hát 2</h4>
-                  <p>Nghệ sĩ 2</p>
+                  <h4>ĐI BAO XA (DA BOUNCY)</h4>
+                  <p>GILL x RPT ORIJINN x RZ MAS</p>
                 </div>
               </div>
               {/* Video 8 */}
               <div className="card portfolio-item" data-category="pop">
                 <div className="portfolio-video">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/VIDEO_ID_2"
-                    title="Video 2"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                  />
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/QUOqxK5nEak?si=H9jF_VHzlpFDSnep" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div className="portfolio-info">
-                  <h4>Tên bài hát 2</h4>
-                  <p>Nghệ sĩ 2</p>
+                  <h4>LAZADA 11.11 - 1 NGÀY SALE TO</h4>
+                  <p>SEVENTEEN</p>
                 </div>
               </div>
               {/* Video 9 */}
               <div className="card portfolio-item" data-category="pop">
                 <div className="portfolio-video">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/VIDEO_ID_2"
-                    title="Video 2"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                  />
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/kzF6cjUEP_Q?si=6YVVBUDOBxCwSekE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div className="portfolio-info">
-                  <h4>Tên bài hát 2</h4>
-                  <p>Nghệ sĩ 2</p>
+                  <h4>Có TIGER, Tết ăn cơm nhà mới là Tết nhất</h4>
                 </div>
               </div>
               {/* Video 10 */}
               <div className="card portfolio-item" data-category="pop">
                 <div className="portfolio-video">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/VIDEO_ID_2"
-                    title="Video 2"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                  />
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/krt1pHIBjMg?si=LJK_HJdjH1mDzEyf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div className="portfolio-info">
-                  <h4>Tên bài hát 2</h4>
-                  <p>Nghệ sĩ 2</p>
+                  <h4>MAXSUN ĐI CÙNG TA</h4>
                 </div>
               </div>
             </div>
