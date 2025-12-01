@@ -1500,3 +1500,87 @@ p {
   object-fit: contain;
   border-radius: var(--radius-lg);
 }
+
+/* ===================================
+   PRICING TABS
+   =================================== */
+
+.pricing-tabs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.pricing-tab {
+  padding: var(--spacing-lg);
+  background: var(--bg-card);
+  border: 2px solid rgba(123, 63, 242, 0.2);
+  border-radius: var(--radius-md);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pricing-tab:hover,
+.pricing-tab.active {
+  border-color: var(--primary-purple);
+  background: rgba(123, 63, 242, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(123, 63, 242, 0.3);
+}
+
+.pricing-tab h3 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.pricing-tab-content {
+  position: relative;
+  min-height: 600px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-card);
+}
+
+.pricing-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.pricing-image.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.pricing-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: var(--radius-lg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pricing-tabs {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .pricing-tab-content {
+    min-height: 400px;
+  }
+}
