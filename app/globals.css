@@ -220,8 +220,8 @@ p {
 }
 
 .nav-logo img {
-  height: 200px;
-  width: 200px;
+  height: 70px;
+  width: 70px;
   object-fit: contain;
 }
 
@@ -685,7 +685,6 @@ p {
   text-align: center;
   display: flex;
   flex-direction: column;
-  min-height: 350px;
   padding: var(--spacing-lg);
   justify-content: flex-start;
 }
