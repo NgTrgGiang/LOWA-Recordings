@@ -15,7 +15,7 @@ export default function Home() {
             <li><a href="#services" className="nav-link">Dịch Vụ</a></li>
             <li><a href="#partners" className="nav-link">Đối Tác</a></li>
             <li><a href="#portfolio" className="nav-link">Portfolio</a></li>
-            <li><a href="#equipment" className="nav-link">Thiết Bị</a></li>
+            <li><a href="#pricing" className="nav-link">Bảng giá</a></li>
             <li><a href="#contact" className="nav-link">Liên Hệ & Đặt Lịch</a></li>
           </ul>
 
@@ -113,22 +113,22 @@ export default function Home() {
           <div className="partners-container">
             <div className="partners-logos">
               <div className="partner-logo">
-                <img src="/assets/partner-1.png" alt="Partner 1" />
+                <img src="/assets/tải xuống (2).png" alt="Partner 1" />
               </div>
               <div className="partner-logo">
-                <img src="/assets/partner-2.png" alt="Partner 2" />
+                <img src="/assets/tải xuống (3).png" alt="Partner 2" />
               </div>
               <div className="partner-logo">
-                <img src="/assets/partner-3.png" alt="Partner 3" />
+                <img src="/assets/tải xuống (4).png" alt="Partner 3" />
               </div>
               <div className="partner-logo">
-                <img src="/assets/partner-4.png" alt="Partner 4" />
+                <img src="/assets/tải xuống (5).png" alt="Partner 4" />
               </div>
               <div className="partner-logo">
-                <img src="/assets/partner-5.png" alt="Partner 5" />
+                <img src="/assets/tải xuống (6).png" alt="Partner 5" />
               </div>
               <div className="partner-logo">
-                <img src="/assets/partner-6.png" alt="Partner 6" />
+                <img src="/assets/tải xuống.png" alt="Partner 6" />
               </div>
             </div>
 
@@ -399,13 +399,13 @@ export default function Home() {
               <div className="card pricing-card">
                 <h3>Gói Cơ Bản</h3>
                 <div className="pricing-price">
-                  <span className="price-amount">400K</span>
+                  <span className="price-amount">400.000 VNĐ</span>
                 </div>
                 <ul className="pricing-features">
                   <li><strong>90 phút</strong></li>
                   <li>100.000 VNĐ/người</li>
                   <li>100.000 VNĐ/30 phút</li>
-                  <li>Chỉnh chènh, phơ</li>
+                  <li>Chỉnh chênh, phô</li>
                   <li>Mix&Master cơ bản</li>
                 </ul>
                 <p style={{ fontSize: '0.85rem', marginTop: 'var(--spacing-md)' }}>
@@ -417,13 +417,13 @@ export default function Home() {
               <div className="card pricing-card">
                 <h3>Gói Nâng Cao</h3>
                 <div className="pricing-price">
-                  <span className="price-amount">600K</span>
+                  <span className="price-amount">600.000 VNĐ</span>
                 </div>
                 <ul className="pricing-features">
                   <li><strong>120 phút</strong></li>
                   <li>150.000 VNĐ/người</li>
                   <li>100.000 VNĐ/30 phút</li>
-                  <li>Chỉnh chènh, phơ</li>
+                  <li>Chỉnh chênh, phô</li>
                   <li>Edit nhịp phách</li>
                   <li>Mix&Master tiêu chuẩn</li>
                 </ul>
@@ -437,14 +437,14 @@ export default function Home() {
                 <div className="pricing-badge">Phổ biến</div>
                 <h3>Gói Pro</h3>
                 <div className="pricing-price">
-                  <span className="price-amount">800K</span>
+                  <span className="price-amount">800.000 VNĐ</span>
                 </div>
                 <ul className="pricing-features">
                   <li><strong>150 phút</strong></li>
                   <li>200.000 VNĐ/người</li>
                   <li>150.000 VNĐ/30 phút</li>
-                  <li>Tư vấn, dựng beat</li>
-                  <li>Chỉnh chènh, phơ</li>
+                  <li>Tư vấn, dựng bè</li>
+                  <li>Chỉnh chênh, phô</li>
                   <li>Edit nhịp phách</li>
                   <li>Mix&Master nâng cao</li>
                 </ul>
@@ -457,14 +457,14 @@ export default function Home() {
               <div className="card pricing-card">
                 <h3>Gói Session</h3>
                 <div className="pricing-price">
-                  <span className="price-amount">1.5tr</span>
+                  <span className="price-amount">1.500.000 VNĐ</span>
                 </div>
                 <ul className="pricing-features">
                   <li><strong>240 phút</strong></li>
                   <li>250.000 VNĐ/người</li>
                   <li>150.000 VNĐ/30 phút</li>
-                  <li>Tư vấn dựng beat, Adlib</li>
-                  <li>Chỉnh chènh, phơ</li>
+                  <li>Tư vấn dựng beat, ADLIB</li>
+                  <li>Chỉnh chênh, phô</li>
                   <li>Edit nhịp phách</li>
                   <li>Mix&Master chuyên nghiệp</li>
                 </ul>
