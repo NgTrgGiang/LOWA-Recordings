@@ -122,13 +122,13 @@ export default function Home() {
                 <img src="/assets/lienquanmobile.png" alt="Partner 3" />
               </div>
               <div className="partner-logo">
-                <img src="/assets/msb.jpg" alt="Partner 4" />
+                <img src="/assets/msb.png" alt="Partner 4" />
               </div>
               <div className="partner-logo">
                 <img src="/assets/rapviet.jpg" alt="Partner 5" />
               </div>
               <div className="partner-logo">
-                <img src="/assets/vietcombank.jpg" alt="Partner 6" />
+                <img src="/assets/vietcombank.png" alt="Partner 6" />
               </div>
               <div className="partner-logo">
                 <img src="/assets/domino.png" alt="Partner 7" />
@@ -426,11 +426,6 @@ export default function Home() {
           <div className="footer-bottom">
             <p>© 2021 LOWA Recordings</p>
             <p>Designed by NgTruongGiang from AITG</p>
-            <div className="footer-legal">
-              <a href="#">Terms & Conditions</a>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Cookies Policy</a>
-            </div>
           </div>
         </div>
       </footer>

@@ -76,11 +76,12 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  font-size: 20px;
 }
 
 body {
   font-family: var(--font-primary);
-  background-color: var(--bg-primary);
+  background: radial-gradient(ellipse at center, #1A0F2E 0%, #0A0A0F 70%);
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
@@ -205,7 +206,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-md) var(--spacing-lg);
+  padding: var(--spacing-sm) var(--spacing-lg);
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -1481,7 +1482,7 @@ p {
 
 .pricing-tab-content {
   position: relative;
-  min-height: 600px;
+  min-height: 900px;
   border-radius: var(--radius-lg);
   overflow: hidden;
   background: var(--bg-card);
@@ -1506,7 +1507,7 @@ p {
 .pricing-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: var(--radius-lg);
 }
 
@@ -1520,4 +1521,23 @@ p {
   .pricing-tab-content {
     min-height: 400px;
   }
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid rgba(123, 63, 242, 0.2);
+  margin-top: var(--spacing-xl);
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.footer-credit {
+  text-align: right;
 }

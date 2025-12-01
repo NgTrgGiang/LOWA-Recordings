@@ -343,9 +343,18 @@ counters.forEach(counter => counterObserver.observe(counter));
 console.log('🎵 LOWA Recordings - Website loaded successfully!');
 
 // Pricing Tabs with Auto-Rotation
-document.addEventListener('DOMContentLoaded', function () {
+(function initPricingTabs() {
   const tabs = document.querySelectorAll('.pricing-tab');
   const images = document.querySelectorAll('.pricing-image');
+
+  // Check if elements exist
+  if (tabs.length === 0 || images.length === 0) {
+    console.log('Pricing tabs not found, retrying...');
+    setTimeout(initPricingTabs, 100);
+    return;
+  }
+
+  console.log('Pricing tabs initialized:', tabs.length);
 
   let currentIndex = 0;
   let autoRotateInterval;
@@ -353,6 +362,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Function to switch to a specific tab
   function switchTab(index) {
+    console.log('Switching to tab:', index);
     // Remove active class from all
     tabs.forEach(t => t.classList.remove('active'));
     images.forEach(img => img.classList.remove('active'));
@@ -373,17 +383,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Start auto-rotation (every 3 seconds)
   function startAutoRotate() {
+    console.log('Starting auto-rotation...');
     autoRotateInterval = setInterval(autoRotate, 3000);
   }
 
   // Stop auto-rotation
   function stopAutoRotate() {
+    console.log('Stopping auto-rotation...');
     clearInterval(autoRotateInterval);
   }
 
   // Handle hover events
   tabs.forEach((tab, index) => {
     tab.addEventListener('mouseenter', function () {
+      console.log('Hover on tab:', index);
       isHovering = true;
       stopAutoRotate();
       currentIndex = index;
@@ -391,6 +404,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     tab.addEventListener('mouseleave', function () {
+      console.log('Leave tab:', index);
       isHovering = false;
       startAutoRotate();
     });
@@ -398,4 +412,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Start auto-rotation on page load
   startAutoRotate();
-});
+  console.log('✅ Pricing auto-rotation started!');
+})();
