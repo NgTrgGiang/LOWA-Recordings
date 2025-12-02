@@ -43,7 +43,8 @@ export default function Home() {
               Phòng thu âm chuyên nghiệp với thiết bị hiện đại, mang đến chất lượng âm thanh đỉnh cao cho nghệ sĩ và nhạc sĩ
             </p>
             <div className="hero-cta">
-              <a href="#contact" className="btn btn-primary btn-large">Đặt Lịch Ngay</a>
+              <a href="https://www.facebook.com/messages/t/624755474835140" target="_blank"
+                rel="noopener noreferrer" className="btn btn-primary btn-large">Đặt Lịch Ngay</a>
               <a href="#portfolio" className="btn btn-outline btn-large">Xem Portfolio</a>
             </div>
           </div>
@@ -100,6 +101,45 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <section id="pricing" className="section">
+        <div className="container">
+          <div className="section-header">
+            <h2 className="section-title">Bảng Giá</h2>
+            <p className="section-subtitle">
+              Các gói dịch vụ linh hoạt phù hợp với mọi nhu cầu
+            </p>
+          </div>
+
+          <div className="pricing-tabs-container">
+            {/* Tabs */}
+            <div className="pricing-tabs">
+              <div className="pricing-tab active" data-tab="tab1">
+                <h3>Thu Âm Nhạc Cụ</h3>
+              </div>
+              <div className="pricing-tab" data-tab="tab2">
+                <h3>Phối Beat</h3>
+              </div>
+              <div className="pricing-tab" data-tab="tab3">
+                <h3>Gói Studio</h3>
+              </div>
+            </div>
+
+            {/* Tab Content - Images */}
+            <div className="pricing-tab-content">
+              <div className="pricing-image active" data-content="tab1">
+                <img src="/assets/pricing-nhaccu.png" alt="Thu Âm Nhạc Cụ" />
+              </div>
+              <div className="pricing-image" data-content="tab2">
+                <img src="/assets/pricing-beat.png" alt="Phối Beat" />
+              </div>
+              <div className="pricing-image" data-content="tab3">
+                <img src="/assets/pricing-vocal.png" alt="Thu Âm Vocal" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Partners & Clients Section */}
       <section id="partners" className="section">
         <div className="container">
@@ -113,25 +153,28 @@ export default function Home() {
           <div className="partners-container">
             <div className="partners-logos">
               <div className="partner-logo">
-                <img src="/assets/mixigaming.png" alt="Partner 1" />
+                <img src="/assets/Artist/phao.jpg" alt="Partner 1" />
               </div>
               <div className="partner-logo">
-                <img src="/assets/samsung.png" alt="Partner 2" />
+                <img src="/assets/Artist/z6794988422237_626f2176e9aa12188fca966f0bbf5850.jpg" alt="Partner 2" />
               </div>
               <div className="partner-logo">
-                <img src="/assets/lienquanmobile.png" alt="Partner 3" />
+                <img src="/assets/Artist/cuong7.JPG" alt="Partner 3" />
               </div>
               <div className="partner-logo">
-                <img src="/assets/msb.png" alt="Partner 4" />
+                <img src="/assets/Artist/quanap.JPG" alt="Partner 4" />
               </div>
               <div className="partner-logo">
-                <img src="/assets/rapviet.jpg" alt="Partner 5" />
+                <img src="/assets/Artist/khánhvy.JPG" alt="Partner 5" />
               </div>
               <div className="partner-logo">
-                <img src="/assets/vietcombank.png" alt="Partner 6" />
+                <img src="/assets/Artist/Hyperfocus (Gill, Wxrdie, Lucin3x, Gin Dinh).jpg" alt="Partner 6" />
               </div>
               <div className="partner-logo">
-                <img src="/assets/domino.png" alt="Partner 7" />
+                <img src="/assets/Artist/RZ Mas.jpg" alt="Partner 7" />
+              </div>
+              <div className="partner-logo">
+                <img src="/assets/Artist/VN Sound.jpg" alt="Partner 9" />
               </div>
             </div>
 
@@ -292,46 +335,6 @@ export default function Home() {
                 <div className="portfolio-info">
                   <h4>MAXSUN ĐI CÙNG TA</h4>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing Section */}
-      <section id="pricing" className="section">
-        <div className="container">
-          <div className="section-header">
-            <h2 className="section-title">Bảng Giá</h2>
-            <p className="section-subtitle">
-              Các gói dịch vụ linh hoạt phù hợp với mọi nhu cầu
-            </p>
-          </div>
-
-          <div className="pricing-tabs-container">
-            {/* Tabs */}
-            <div className="pricing-tabs">
-              <div className="pricing-tab active" data-tab="tab1">
-                <h3>Thu Âm Nhạc Cụ</h3>
-              </div>
-              <div className="pricing-tab" data-tab="tab2">
-                <h3>Phối Beat</h3>
-              </div>
-              <div className="pricing-tab" data-tab="tab3">
-                <h3>Gói Studio</h3>
-              </div>
-            </div>
-
-            {/* Tab Content - Images */}
-            <div className="pricing-tab-content">
-              <div className="pricing-image active" data-content="tab1">
-                <img src="/assets/pricing-nhaccu.png" alt="Thu Âm Nhạc Cụ" />
-              </div>
-              <div className="pricing-image" data-content="tab2">
-                <img src="/assets/pricing-beat.png" alt="Phối Beat" />
-              </div>
-              <div className="pricing-image" data-content="tab3">
-                <img src="/assets/pricing-vocal.png" alt="Thu Âm Vocal" />
               </div>
             </div>
           </div>

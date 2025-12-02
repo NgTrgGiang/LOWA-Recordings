@@ -156,9 +156,11 @@ p {
    Layout Components
    =================================== */
 .container {
-  max-width: 1500px;
+  max-width: 95%;
+  /* Sử dụng 95% màn hình */
   margin: 0 auto;
-  padding: 0 var(--spacing-lg);
+  padding: 0 var(--spacing-md);
+  /* Giảm padding */
 }
 
 .section {
@@ -1087,44 +1089,109 @@ p {
    =================================== */
 .partners-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 55% 1fr;
+  /* Logos 55%, Video 45% */
   gap: var(--spacing-3xl);
   align-items: center;
 }
 
 .partners-logos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--spacing-lg);
+  position: relative;
+  width: 100%;
+  /* Chiếm hết chiều rộng */
+  height: 1000px;
+  /* Tăng chiều cao để dùng hết không gian */
+  /* Chiều cao container */
 }
 
 .partner-logo {
+  position: absolute;
   background: transparent;
   border: none;
   padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
   transition: var(--transition-normal);
 }
 
-.partner-logo:hover {
-  border-color: transparent;
-  transform: translateY(-5px);
-  box-shadow: none;
+/* Định vị từng ảnh - tùy chỉnh theo ý muốn */
+.partner-logo:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 312px;
+  height: 390px;
+  z-index: 5;
+}
+
+.partner-logo:nth-child(2) {
+  top: 20px;
+  right: 150px;
+  width: 437px;
+  height: 281px;
+  z-index: 4;
+}
+
+.partner-logo:nth-child(3) {
+  top: 200px;
+  left: 320px;
+  width: 281px;
+  height: 312px;
+  z-index: 6;
+}
+
+.partner-logo:nth-child(4) {
+  top: 290px;
+  right: 0px;
+  width: 412px;
+  height: 334px;
+  z-index: 3;
+}
+
+.partner-logo:nth-child(5) {
+  bottom: 150px;
+  left: 50px;
+  width: 343px;
+  height: 281px;
+  z-index: 4;
+}
+
+.partner-logo:nth-child(6) {
+  bottom: 80px;
+  right: 230px;
+  width: 390px;
+  height: 312px;
+  z-index: 5;
+}
+
+.partner-logo:nth-child(7) {
+  bottom: 0;
+  left: 370px;
+  width: 281px;
+  height: 343px;
+  z-index: 3;
+}
+
+.partner-logo:nth-child(8) {
+  bottom: 0px;
+  right: 0;
+  width: 234px;
+  height: 281px;
+  z-index: 4;
 }
 
 .partner-logo img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  filter: grayscale(100%) brightness(0.8);
+  object-fit: cover;
+  filter: grayscale(0%);
   transition: var(--transition-normal);
 }
 
-.partner-logo:hover img {
-  filter: grayscale(0%) brightness(1);
+.partner-logo:hover {
+  transform: scale(1.05) rotate(-2deg);
+  z-index: 10 !important;
+  box-shadow: 0 20px 60px rgba(123, 63, 242, 0.4);
 }
 
 .partners-video {
