@@ -408,7 +408,7 @@ export default function Home() {
           <div className="footer-social">
             <h3>Follow Us</h3>
             <div className="social-icons-grid">
-              <a href="#" target="_blank" rel="noopener noreferrer" className="social-box" aria-label="Instagram">
+              <a href="https://www.instagram.com/lowa.recordings/" target="_blank" rel="noopener noreferrer" className="social-box" aria-label="Instagram">
                 <i className="fab fa-instagram"></i>
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer" className="social-box" aria-label="YouTube">
@@ -416,9 +416,6 @@ export default function Home() {
               </a>
               <a href="https://www.facebook.com/lowa.recordings" target="_blank" rel="noopener noreferrer" className="social-box" aria-label="Facebook">
                 <i className="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="social-box" aria-label="TikTok">
-                <i className="fab fa-tiktok"></i>
               </a>
             </div>
           </div>
